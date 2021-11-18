@@ -1,0 +1,15 @@
+extends layout
+
+block content
+    p Dit is een lijn om de afbeelding van onder de bar te halen
+    header#home.w3-display-container.w3-content.w3-wide(style='max-width:1500px;')
+        img.w3-image(src='images/Foto%202.jpg' alt='Foto publiek + logo NVDJ' width='1500' height='800')
+        .w3-display-middle.w3-margin-top.w3-center
+
+block footnote
+    footer.w3-center.w3-black.w3-padding-16
+        div
+            // Hier juiste html pagina invullen
+            a(href='./Info').w3-bar-item.w3-button Info
+            a(href='./Contact').w3-bar-item.w3-button Contact
+            a(href='./Vrijwilliger').w3-bar-item.w3-button Vrijwilligers

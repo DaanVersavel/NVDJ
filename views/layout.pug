@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title Nacht Van De Jeugdbeweging
+    title= NVDJ
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='shortcut icon' type='image/png' href='images/favicon-32x32.png')
+  body.center
+    .w3-top
+      .w3-bar.w3-white.w3-wide.w3-padding.w3-card
+        a(href='/Main').w3-bar-item.w3-button NVDJ
+        // Float links to the right. Hide them on small screens
+        .w3-right.w3-hide-small
+          a(href='./Main').w3-bar-item.w3-button Home
+          a(href='./Tickets').w3-bar-item.w3-button Tickets
+          a(href='./Line-up').w3-bar-item.w3-button Line up
+          a(href='./Locatie').w3-bar-item.w3-button Locatie
+          a(href='./FAQ').w3-bar-item.w3-button FAQ
+
+    block content
+    block footnote
