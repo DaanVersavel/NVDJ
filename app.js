@@ -18,7 +18,7 @@ var LineUpRouter = require('./routes/Line-up');
 var LocatieRouter = require('./routes/Locatie');
 var TicketsRouter = require('./routes/Tickets');
 var vrijwilligerRouter = require('./routes/Vrijwilliger');
-var wikiRouter = require('./routes/wiki');
+
 
 
 var app = express();
@@ -44,7 +44,7 @@ app.use('/Locatie', LocatieRouter);
 app.use('/Tickets', TicketsRouter);
 app.use('/Vrijwilliger', vrijwilligerRouter);
 app.use('/Line-up', LineUpRouter);
-app.use('/wiki', wikiRouter);
+
 
 
 
