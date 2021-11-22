@@ -11,7 +11,7 @@ block content
         h2.card-head Waar kan ik aan bandjes geraken?
         p
             | De leiders, aspi&apos;s en kerels van Chiro Maeva verkopen allemaal bandjes. Daarnaast zijn er ook
-            | verschillende verkooppunten zoals Freedom,Comar Sport en Sportcentrum De Schreef. We houden ook wedstrijden om
+            | verschillende verkooppunten zoals Freedom, Comar Sport en Sportcentrum De Schreef. We houden ook wedstrijden om
             | gratis bandjes te winnen. Er worden geen bandjes aan de kassa verkocht, dus zorg ervoor dat je deze op voorhand
             | gekocht hebt.
         h2.card-head Wanneer start de fuif?
@@ -21,27 +21,24 @@ block content
         ul.a
             li Het is verplicht om je identiteitskaart mee te nemen, anders mag je niet binnen.
             br
-            li We aanvaarden alleen cash en payconiq, dus geen bancantact.
+            li We aanvaarden alleen cash en Payconiq, dus geen bancontact.
             br
             li
                 | Wil je je kapoenen in het oog houden, maar ben je al wat ouder? Er is ook een 30+ tent
                 | aanwezig op het terrein!
             br
-        h2.card-head Nog vragen
+        h2.card-head Nog vragen?
         p
             | Indien u nog vragen hebt, kan u deze hier indienen en zullen wij deze proberen beantwoorden!
-        form(action='FAQvraag.php')
             // Nog vragen wat we precies moeten doen
-            label(for='email') e-mail:
-            br
-            input#email(type='email' name='email' multiple='')
-            br
-            label(for='vraag') Vraag:
-            br
-            input#vraag(type='text' name='vraag' value=' ')
-            br
-            br
-            input(type='submit' value='Submit')
+        form.container(method='post' action='/FAQ')
+                // Nog vragen wat we precies moeten doen
+                .form-group
+                    input.form-control(type="email", name='email', placeholder="Email")
+                .form-group
+                    textarea.form-control(type="text", name='vraag' placeholder="Uw vraag")
+                button Submit
+
 block footnote
     footer.w3-center.w3-black.w3-padding-16
         div
