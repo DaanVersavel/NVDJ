@@ -1,7 +1,16 @@
 extends layout
+
+
+
 block content
     p Dit is een lijn om de afbeelding van onder de bar te halen
     div
+        img.to_the_right(src='images/Blauw.jpg' alt='blauw' width='100' height='862')
+    div
+        img.to_the_left(src='images/Blauw.jpg' alt='blauw' width='100' height='862')
+
+    divp(style="text-align:center;")
+
         h1 FAQ
         h2.card-head Wat is de minimum leeftijd om binnen te mogen?
         p
@@ -14,6 +23,9 @@ block content
             | verschillende verkooppunten zoals Freedom, Comar Sport en Sportcentrum De Schreef. We houden ook wedstrijden om
             | gratis bandjes te winnen. Er worden geen bandjes aan de kassa verkocht, dus zorg ervoor dat je deze op voorhand
             | gekocht hebt.
+
+
+
         h2.card-head Wanneer start de fuif?
         p
             | De fuif start om 20 uur en eindigt om 4 uur.
@@ -21,7 +33,7 @@ block content
         ul.a
             li Het is verplicht om je identiteitskaart mee te nemen, anders mag je niet binnen.
             br
-            li We aanvaarden alleen cash en Payconiq, dus geen bancontact.
+            li We aanvaarden alleen cash en payconiq, dus geen bancontact.
             br
             li
                 | Wil je je kapoenen in het oog houden, maar ben je al wat ouder? Er is ook een 30+ tent

@@ -45,7 +45,6 @@ app.use('/Tickets', TicketsRouter);
 app.use('/Vrijwilliger', vrijwilligerRouter);
 app.use('/Line-up', LineUpRouter);
 
-
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
