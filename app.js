@@ -45,11 +45,6 @@ app.use('/Tickets', TicketsRouter);
 app.use('/Vrijwilliger', vrijwilligerRouter);
 app.use('/Line-up', LineUpRouter);
 
-
-
-
-
-
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
@@ -77,21 +72,23 @@ var db = mongoose.connection;
 
 //Bind connection to error event (to get notification of connection errors)
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
+
+
 //schema aanmaken
-const notesSchema = {
-  Naam: String,
-  Vraag: String
-}
-const Note = mongoose.model("Note", notesSchema);
+var vraagSchema = new mongoose.Schema({
+  email: String,
+  naam: String
+})
+var Note = mongoose.model("vraag", vraagSchema);
 
 app.get("/", function(req,res){
-  res.sendFile(__dirname+"/FAQ.html")
+  res.sendFile(__dirname+"/FAQ")
 })
 
-app.post("/",function(req,res){
+app.post("/FAQ",function(req,res){
   let newNote= new Note({
-    title:req.body.Naam,
-    content:req.body.Vraag
+    email:req.body.email,
+    vraag:req.body.vraag
   })
   newNote.save();
   //res.redirect("/FAQ.html") redirect
