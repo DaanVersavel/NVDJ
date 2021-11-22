@@ -7,15 +7,16 @@ html
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel='stylesheet', href='/stylesheets/style.css')
-    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous")
     link(rel='shortcut icon' type='image/png' href='images/favicon-32x32.png')
   body.center
     .w3-top
       .w3-bar.w3-white.w3-wide.w3-padding.w3-card
-        a(href='/').w3-bar-item.w3-button NVDJ
-        // Float links to the right. Hide them on small screens
-        .w3-right.w3-hide-small
-          a(href='./').w3-bar-item.w3-button Home
+        img.w3-image.w3-left(src='images/LogoTRANSPARANT.png' alt='logo NVDJ' width='40' height='40')
+
+        a(href='/Main').w3-bar-item.w3-button NVDJ
+        // Float links to the right.
+        .w3-right
+          a(href='./Main').w3-bar-item.w3-button Home
           a(href='./Tickets').w3-bar-item.w3-button Tickets
           a(href='./Line-up').w3-bar-item.w3-button Line up
           a(href='./Locatie').w3-bar-item.w3-button Locatie
