@@ -48,12 +48,17 @@ block content
                 .form-group
                     input.form-control(type="email", name='email', placeholder="Email")
                 .form-group
-                    textarea.form-control(type="text", name='vraag' placeholder="Uw vraag")
+                    textarea.form-control(name='vraag' placeholder="Uw vraag")
                 button Submit
 
 block footnote
     footer.w3-center.w3-black.w3-padding-16
         div
+            //foto link naar socials
+            a(href='https://www.facebook.com/nachtvd.aalst')
+                img(src="/images/Facebook_Logo-modified-modified.png" height=27 width=27 )
+            a(href='https://www.instagram.com/nvdj.aalst/')
+                img(src="/images/instagram_logo.png" height=45 width=45)
             // Hier juiste html pagina invullen
             a(href='./Info').w3-bar-item.w3-button Info
             a(href='./Contact').w3-bar-item.w3-button Contact
