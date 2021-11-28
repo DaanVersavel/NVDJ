@@ -2,45 +2,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap'); /*"Special Elite", cursive;*/
 
 /*countdown css*/
-  body2 {
-    background-image: image("public/images/249439190_3162689983961510_1826339728240520335_n.jpg");
-    background-repeat: no-repeat;
-    background-size: inherit;
-    background-position: center center;
-    max-width: 100%;
-    height: auto;
-    font-family: "Special Elite", cursive;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align:center;
-    margin:0;
-    overflow: hidden;
-  }
-  h5{
-    font-family: "Special Elite", cursive;
-    font-weight: normal;
-    font-size: 60px;
-    margin: 0 0 20px; /*top|horizontal|bottom*/
-  }
-  .countdown{
-    display: flex; /*expands items to fill available free space or shrinks them to prevent overflow*/
-    transform: scale(2);
-  }
-  .time{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 15px;
-  }
-  .time h6{
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 1;
-    margin: 0 0 5px;
-  }
+.bodycountdown {
+  background-image: image("public/images/249439190_3162689983961510_1826339728240520335_n.jpg");
+  background-repeat: no-repeat;
+  background-size: inherit;
+  background-position: center center;
+  max-width: 100%;
+  height: auto;
+  font-family: "Special Elite", cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align:center;
+  margin:0;
+  overflow: hidden;
+}
+h5{
+  font-family: "Special Elite", cursive;
+  font-weight: normal;
+  font-size: 60px;
+  margin: 0 0 20px; /*top|horizontal|bottom*/
+}
+.countdown{
+  display: flex; /*expands items to fill available free space or shrinks them to prevent overflow*/
+  transform: scale(2);
+}
+.time{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+}
+.time h6{
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1;
+  margin: 0 0 5px;
+}
 
 /* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
   html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
