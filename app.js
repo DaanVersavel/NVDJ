@@ -18,7 +18,6 @@ var LocatieRouter = require('./routes/Locatie');
 var TicketsRouter = require('./routes/Tickets');
 var vrijwilligerRouter = require('./routes/Vrijwilliger');
 
-
 var app = express();
 
 // view engine setup
@@ -59,7 +58,6 @@ app.use(function(err, req, res, next) {
 });
 
 //database
-
 app.use(bodyParser.urlencoded({extended: true}));
 //Set up default mongoose connection
 const connectionUrl = "mongodb+srv://Bob:A1CNkA58GFzGVRZA@projectinternetapplicat.7xwyz.mongodb.net/FAQ?retryWrites=true&w=majority";

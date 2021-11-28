@@ -1,19 +1,15 @@
 extends layout
 
 block content
-
-
-    p Dit is een lijn om de afbeelding van onder de bar te halen
-    h1 Contact
-    div
-        p
-            | Indien u nog met vragen zit, verwijzen we u door naar de FAQ pagina. Daar staan enkele vragen
-            | beantwoord, en kan u zelf ook vragen indienen.
-        ul
-            li Meuleschettestraat 32, 9300 Aalst
-            li chiro.maeva@gmail.com
-
-
-    div
-        img.w3-image(src='images/buiten%20nacht.jpg' alt='Foto publiek + logo NVDJ' width='1640' height='800')
-
+    .w3-content.w3-padding(style='max-width:80%;')
+        #Contact.w3-container
+            h2.w3-border-bottom.w3-border-light-grey.w3-padding-16 Contact
+            div
+                p
+                    | Indien u nog met vragen zit, verwijzen we u door naar de FAQ pagina. Daar staan enkele vragen
+                    | beantwoord, en kan u zelf ook vragen indienen.
+                ul
+                    li Meuleschettestraat 32, 9300 Aalst
+                    li chiro.maeva@gmail.com
+            div
+                img.w3-image(src='images/buiten%20nacht.jpg' alt='Foto publiek + logo NVDJ' width=auto height=auto)
