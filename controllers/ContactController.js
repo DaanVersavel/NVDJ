@@ -25,8 +25,8 @@ exports.vraag_create_post = [
         // Create Author object with escaped and trimmed data
         var vraag1 = new vraagSchema(
             {
-                Naam: req.body.email,
-                Vraag: req.body.vraag,
+                email: req.body.email,
+                vraag: req.body.vraag,
             }
         );
 
