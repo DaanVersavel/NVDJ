@@ -3,17 +3,22 @@ extends layout
 block content
 
 
-    p Dit is een lijn om de afbeelding van onder de bar te halen
     h1 Contact
     div
-        p
-            | Indien u nog met vragen zit, verwijzen we u door naar de FAQ pagina. Daar staan enkele vragen
-            | beantwoord, en kan u zelf ook vragen indienen.
         ul
             li Meuleschettestraat 32, 9300 Aalst
             li chiro.maeva@gmail.com
 
-
+    h2.card-head Nog vragen?
+    p
+        | Indien u nog vragen hebt, kan u deze hier indienen en zullen wij deze proberen beantwoorden!
+        // Nog vragen wat we precies moeten doen
+    form(action='/action_page.php' target='_blank')
+        input.w3-input.w3-border(type='text' placeholder='Naam' required='' name='Naam')
+        input.w3-input.w3-section.w3-border(type='text' placeholder='Email' required='' name='Email')
+        input.w3-input.w3-section.w3-border(type='text' placeholder='Vraag' required='' name='Vraag')
+        button.w3-button.w3-black.w3-border Submit
+            i.fa.fa-paper-plane
     div
         img.w3-image(src='images/buiten%20nacht.jpg' alt='Foto publiek + logo NVDJ' width='1640' height='800')
 
