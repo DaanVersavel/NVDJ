@@ -1,11 +1,9 @@
 //node libraries importeren
-var createError = require('http-errors');
 var express = require('express');
+var createError = require('http-errors');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-var mongoose= require('mongoose')
-const bodyParser= require("body-parser");
 
 //Route naar pagina maken
 var indexRouter = require('./routes/index');
@@ -58,38 +56,39 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-//database
-
-app.use(bodyParser.urlencoded({extended: true}));
-//Set up default mongoose connection
-const connectionUrl = "mongodb+srv://Bob:A1CNkA58GFzGVRZA@projectinternetapplicat.7xwyz.mongodb.net/FAQ?retryWrites=true&w=majority";
+//Set up mongoose connection
+var mongoose= require('mongoose')
+const bodyParser = require("body-parser");
+app.use(bodyParser.urlencoded({ extended: true }));
+var connectionUrl = "mongodb+srv://Bob:A1CNkA58GFzGVRZA@projectinternetapplicat.7xwyz.mongodb.net/FAQ?retryWrites=true&w=majority";
+var mongoDB = process.env.MONGODB_URI || connectionUrl;
+mongoose.connect(mongoDB, {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.Promise = global.Promise;
 mongoose.connect(connectionUrl,{useNewUrlParser: true}, {useUnifiedTopology: true} );
-//Get the default connection
 var db = mongoose.connection;
-
-//Bind connection to error event (to get notification of connection errors)
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 
+
 //schema aanmaken
-var vraagSchema = new mongoose.Schema({
+/*var vraagSchema = new mongoose.Schema({
   email: String,
   naam: String
 })
 var Note = mongoose.model("vraag", vraagSchema);
 
 app.get("/", function(req,res){
-  res.sendFile(__dirname+"/FAQ")
+  res.sendFile(__dirname+"/Contact")
 })
 
-app.post("/FAQ",function(req,res){
+app.post("/Contact",function(req,res){
   let newNote= new Note({
     email:req.body.email,
     vraag:req.body.vraag
   })
   newNote.save();
   //res.redirect("/FAQ.html") redirect
-})
+})*/
 
 
 module.exports = app;

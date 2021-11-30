@@ -8,6 +8,18 @@ block content
         ul
             li Meuleschettestraat 32, 9300 Aalst
             li chiro.maeva@gmail.com
+    p
+        | Indien u nog vragen hebt, kan u deze hier indienen en zullen wij deze proberen beantwoorden!
+        // Nog vragen wat we precies moeten doen
+    form.container(method='POST' action='')
+        div.form-group
+            label(for='email') Email:
+            input#email.form-control(type='email', placeholder='Email' name='email' required='true' )
+        div.fomr-group
+            label(for='vraag') Vraag:
+            input#vraag.form-control(type='text', placeholder='Uw vraag' name='vraag' required='true')
+        button.btn.btn-primary(type='submit') Submit
+
 
     h2.card-head Nog vragen?
     p

@@ -47,3 +47,30 @@ block content
                 | Indien je toch nog met vragen zit, kan je al je vragen doorsturen op de contact pagina!
 
 
+
+
+
+        h2.card-head Wanneer start de fuif?
+        p
+            | De fuif start om 20 uur en eindigt om 4 uur.
+        h2.card-head Handig om te weten:
+        ul.a
+            li Het is verplicht om je identiteitskaart mee te nemen, anders mag je niet binnen.
+            br
+            li We aanvaarden alleen cash en payconiq, dus geen bancontact.
+            br
+            li
+                | Wil je je kapoenen in het oog houden, maar ben je al wat ouder? Er is ook een 30+ tent
+                | aanwezig op het terrein!
+            br
+        h2.card-head Nog vragen?
+        p
+            | Indien u nog vragen hebt, kan u deze hier indienen en zullen wij deze proberen beantwoorden!
+            // Nog vragen wat we precies moeten doen
+        form.container(method='post' action='/FAQ')
+                // Nog vragen wat we precies moeten doen
+                .form-group
+                    input.form-control(type="email", name='email', placeholder="Email")
+                .form-group
+                    textarea.form-control(name='vraag' placeholder="Uw vraag")
+                button.w3-btn(type='submit') Submit
