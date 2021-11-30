@@ -5,11 +5,19 @@ block content
         #Contact.w3-container
             h2.w3-border-bottom.w3-border-light-grey.w3-padding-16 Contact
             div
-                p
-                    | Indien u nog met vragen zit, verwijzen we u door naar de FAQ pagina. Daar staan enkele vragen
-                    | beantwoord, en kan u zelf ook vragen indienen.
                 ul
                     li Meuleschettestraat 32, 9300 Aalst
                     li chiro.maeva@gmail.com
+            h2.w3-border-bottom.w3-border-light-grey.w3-padding-16 Nog vragen?
+            p
+                | Indien u nog met vragen zit verwijzen we u door naar de FAQ.
+                | ALs u daar niet kan geholpen worden kunt u hier uw eigen vraag in dienen.
+                | Wij zullen uw vraag zo snel mogelijk proberen te beantwoorden!
+            form(action='/action_page.php' target='_blank')
+                input.w3-input.w3-border(type='text' placeholder='Naam' required='' name='Naam')
+                input.w3-input.w3-section.w3-border(type='text' placeholder='Email' required='' name='Email')
+                input.w3-input.w3-section.w3-border(type='text' placeholder='Vraag' required='' name='Vraag')
+                button.w3-button.w3-black.w3-border Submit
+                    i.fa.fa-paper-plane
             div
                 img.w3-image(src='images/buiten%20nacht.jpg' alt='Foto publiek + logo NVDJ' width=auto height=auto)

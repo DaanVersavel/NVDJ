@@ -73,8 +73,8 @@ h5{
 /* End extract */
 
   html,body{font-family:"Special Elite", cursive;font-size:20px;line-height:2}html{overflow-x:hidden}
-  p{font-family:"Varela Round", sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
-  ul{font-family:"Varela Round", sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
+  p{font-family:"Varela Round", sans-serif;font-size:18px;line-height:1.5}html{overflow-x:hidden}
+  ul{font-family:"Varela Round", sans-serif;font-size:18px;line-height:1.5}html{overflow-x:hidden}
   h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}
   .w3-serif{font-family:serif}.w3-sans-serif{font-family:sans-serif}.w3-cursive{font-family:cursive}.w3-monospace{font-family:monospace}
   h1,h2,h3,h4{font-family:"Varela Round", sans-serif;font-weight:400;margin:10px 0}.w3-wide{letter-spacing:4px}
@@ -194,6 +194,10 @@ h5{
   .w3-padding-64{padding-top:64px!important;padding-bottom:64px!important}
   .w3-padding-top-64{padding-top:64px!important}.w3-padding-top-48{padding-top:48px!important}
   .w3-padding-top-32{padding-top:32px!important}.w3-padding-top-24{padding-top:24px!important}
+  .w3-padding-top-16{padding-top:16px!important}.w3-padding-top-8{padding-top:8px!important}
+  .w3-padding-bottom-64{padding-bottom:64px!important}.w3-padding-bottom-48{padding-bottom:48px!important}
+  .w3-padding-bottom-32{padding-bottom:32px!important}.w3-padding-bottom-24{padding-bottom:24px!important}
+  .w3-padding-bottom-16{padding-bottom:16px!important}.w3-padding-bottom-8{padding-bottom:8px!important}
   .w3-left{float:left!important}.w3-right{float:right!important}
   .w3-button:hover{color:#000!important;background-color:#ccc!important}
   .w3-transparent,.w3-hover-none:hover{background-color:transparent!important}
