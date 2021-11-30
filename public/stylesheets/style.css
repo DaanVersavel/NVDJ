@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap'); /*"Varela Round", sans-serif*/
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap'); /*"Special Elite", cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap'); /*"Press Start 2P", cursive*/
 
 /*countdown css*/
 .bodycountdown {
-  background-image: image("public/images/249439190_3162689983961510_1826339728240520335_n.jpg");
+  background: url("../images/tentFlitsHigh.jpg");
   background-repeat: no-repeat;
-  background-size: inherit;
+  background-size: cover;
   background-position: center center;
   max-width: 100%;
-  height: auto;
+  height: 500px;
   font-family: "Special Elite", cursive;
   display: flex;
   flex-direction: column;
@@ -20,9 +21,9 @@
 }
 h5{
   font-family: "Special Elite", cursive;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 60px;
-  margin: 0 0 20px; /*top|horizontal|bottom*/
+  margin: 30px 0 50px; /*top|horizontal|bottom*/
 }
 .countdown{
   display: flex; /*expands items to fill available free space or shrinks them to prevent overflow*/
@@ -33,13 +34,14 @@ h5{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 15px;
+  margin: 0 10px 0;
 }
 .time h6{
+  font-family: "Press Start 2P", cursive;
   font-weight: bold;
   font-size: 36px;
   line-height: 1;
-  margin: 0 0 5px;
+  margin: 0 0 2px;
 }
 
 /* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
@@ -53,7 +55,7 @@ h5{
   a{background-color:transparent}a:active,a:hover{outline-width:0}
   abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}
   b,strong{font-weight:bolder}dfn{font-style:italic}mark{background:#ff0;color:#000}
-  small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+  small{font-size:90%; font-weight: bold;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
   sub{bottom:-0.25em}sup{top:-0.5em}figure{margin:1em 40px}img{border-style:none}
   code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}hr{box-sizing:content-box;height:0;overflow:visible}
   button,input,select,textarea,optgroup{font:inherit;margin:0}optgroup{font-weight:bold}
@@ -73,7 +75,7 @@ h5{
   html,body{font-family:"Special Elite", cursive;font-size:20px;line-height:2}html{overflow-x:hidden}
   p{font-family:"Varela Round", sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
   ul{font-family:"Varela Round", sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
-  h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}
+  h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}
   .w3-serif{font-family:serif}.w3-sans-serif{font-family:sans-serif}.w3-cursive{font-family:cursive}.w3-monospace{font-family:monospace}
   h1,h2,h3,h4{font-family:"Varela Round", sans-serif;font-weight:400;margin:10px 0}.w3-wide{letter-spacing:4px}
   hr{border:0;border-top:1px solid #eee;margin:20px 0}
