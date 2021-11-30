@@ -3,7 +3,6 @@ doctype html
 html
   head
     title Nacht Van De Jeugdbeweging
-    title= NVDJ
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel='stylesheet', href='/stylesheets/style.css')
@@ -11,16 +10,26 @@ html
   body.center
     .w3-top
       .w3-bar.w3-white.w3-wide.w3-padding.w3-card
-        img.w3-image.w3-left(src='images/LogoTRANSPARANT.png' alt='logo NVDJ' width='40' height='40')
-
-        a(href='/Main').w3-bar-item.w3-button NVDJ
-        // Float links to the right.
-        .w3-right
-          a(href='./Main').w3-bar-item.w3-button Home
-          a(href='./Tickets').w3-bar-item.w3-button Tickets
-          a(href='./Line-up').w3-bar-item.w3-button Line up
-          a(href='./Locatie').w3-bar-item.w3-button Locatie
+        img.w3-image.w3-left(src='images/LogoTRANSPARANT.png' alt='logo NVDJ' width='50' height='50')
+        a(href='/').w3-bar-item.w3-button NVDJ AALST
+        .w3-right.w3-hide-small
+          a(href='./').w3-bar-item.w3-button HOME
+          a(href='./Tickets').w3-bar-item.w3-button TICKETS
+          a(href='./Line-up').w3-bar-item.w3-button LINE UP
+          a(href='./Locatie').w3-bar-item.w3-button LOCATIE
           a(href='./FAQ').w3-bar-item.w3-button FAQ
 
-    block content
-    block footnote
+    .w3-padding-64
+      block content
+
+    footer.w3-center.w3-black.w3-padding-16
+      a(href='https://www.facebook.com/nachtvd.aalst')
+        img.w3-image(src="/images/Facebook_Logo-modified-modified.png" height=27 width=27 )
+      a(href='https://www.instagram.com/nvdj.aalst/')
+        img.w3-image(src="/images/instagram_logo.png" height=45 width=45)
+      a(href='./Info').w3-bar-item.w3-button
+        b Info
+      a(href='./Contact').w3-bar-item.w3-button
+        b Contact
+      a(href='./Vrijwilliger').w3-bar-item.w3-button.w3-hide-small
+        b Vrijwilligers

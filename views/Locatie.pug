@@ -1,26 +1,13 @@
 extends layout
 
 block content
-    p Dit is een lijn om de afbeelding van onder de bar te halen
-    p Dit is een lijn om de afbeelding van onder de bar te halen
-    div.w3-center
-        p
-            | Locatie: Sporthal De Voorstad, Cesar Haeltermanstraat 71 9300 Aalst
-            br
-            |     De in- en uitgang is langs Cesar Haeltermanstraat 71.
-            br
-        iframe(src='https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2513.836564306146!2d4.0261061!3d50.9452355!3m2!1i1024!2i768!4f13.1!5e0!3m2!1snl!2sbe!4v1636649843597!5m2!1snl!2sbe' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy')
-    div
+    .w3-content.w3-padding(style='max-width:1564px;text-align:center;')
+        .w3-center
+            p
+                | Locatie: Sporthal De Voorstad, Cesar Haeltermanstraat 71 9300 Aalst
+                br
+                |     De in- en uitgang is langs Cesar Haeltermanstraat 71.
+                br
+            iframe(src='https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2513.836564306146!2d4.0261061!3d50.9452355!3m2!1i1024!2i768!4f13.1!5e0!3m2!1snl!2sbe!4v1636649843597!5m2!1snl!2sbe' width='1000' height='650' style='border:10;' allowfullscreen='' loading='lazy')
 
-block footnote
-    footer.w3-center.w3-black.w3-padding-16
-        div
-            //foto link naar socials
-            a(href='https://www.facebook.com/nachtvd.aalst')
-                img(src="/images/Facebook_Logo-modified-modified.png" height=27 width=27 )
-            a(href='https://www.instagram.com/nvdj.aalst/')
-                img(src="/images/instagram_logo.png" height=45 width=45)
-            // Hier juiste html pagina invullen
-            a(href='./Info').w3-bar-item.w3-button Info
-            a(href='./Contact').w3-bar-item.w3-button Contact
-            a(href='./Vrijwilliger').w3-bar-item.w3-button Vrijwilligers
+
