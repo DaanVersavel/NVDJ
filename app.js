@@ -16,7 +16,6 @@ var LocatieRouter = require('./routes/Locatie');
 var TicketsRouter = require('./routes/Tickets');
 var vrijwilligerRouter = require('./routes/Vrijwilliger');
 
-
 var app = express();
 
 // view engine setup
@@ -67,28 +66,5 @@ mongoose.Promise = global.Promise;
 mongoose.connect(connectionUrl,{useNewUrlParser: true}, {useUnifiedTopology: true} );
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
-
-
-
-//schema aanmaken
-/*var vraagSchema = new mongoose.Schema({
-  email: String,
-  naam: String
-})
-var Note = mongoose.model("vraag", vraagSchema);
-
-app.get("/", function(req,res){
-  res.sendFile(__dirname+"/Contact")
-})
-
-app.post("/Contact",function(req,res){
-  let newNote= new Note({
-    email:req.body.email,
-    vraag:req.body.vraag
-  })
-  newNote.save();
-  //res.redirect("/FAQ.html") redirect
-})*/
-
 
 module.exports = app;

@@ -11,10 +11,10 @@ var VraagSchema = new Schema({
 
 // Virtual for this genre instance URL.
 VraagSchema
-.virtual('url')
-.get(function () {
-  return '/Contact/'+this._id;
-});
+  .virtual('url')
+  .get(function () {
+    return '/Contact/'+this._id;
+  });
 
 // Export model.
 module.exports = mongoose.model('Vraag', VraagSchema);

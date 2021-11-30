@@ -1,30 +1,34 @@
 extends layout
 
 block content
-
-
-    h1 Contact
-    div
-        ul
-            li Meuleschettestraat 32, 9300 Aalst
-            li chiro.maeva@gmail.com
-    h2.card-head Nog vragen?
-
-    p
-        | Indien u nog vragen hebt, kan u deze hier indienen en zullen wij deze proberen beantwoorden!
-        // Nog vragen wat we precies moeten doen
-    form.container(method='POST' action='')
-        div.form-group
-            label(for='naam')
-            input#naam.form-control.w3-input.w3-border.w3-section(type='naam', placeholder='Naam' name='naam' required='true' )
-        div.form-group
-            label(for='email')
-            input#email.form-control.w3-input.w3-border.w3-section(type='email', placeholder='Email' name='email' required='true' )
-        div.fomr-group
-            label(for='vraag')
-            input#vraag.form-control.w3-input.w3-border.w3-section(type='text', placeholder='Uw vraag' name='vraag' required='true')
-        button.w3-button.w3-black.w3-border(type='submit') Submit
-
-    div
-        img.w3-image(src='images/buiten%20nacht.jpg' alt='Foto publiek + logo NVDJ' width='1640' height='800')
-
+    .w3-content.w3-padding(style='max-width:80%;')
+        #Contact.w3-container
+            h2.w3-border-bottom.w3-border-light-grey.w3-padding-16 Contact
+            p Nacht Van De Jeugdbeweging Aalst wordt gerorganiseerd door Chiro Maeva.
+            div
+                ul
+                    li
+                        b Postadres
+                        p Meuleschettestraat 32, 9300 Aalst België
+                    li
+                        b Emailadres
+                        p chiromaeva@gmail.com
+            h2.w3-border-bottom.w3-border-light-grey.w3-padding-16 Nog vragen?
+            p
+                | Indien u nog met vragen zit verwijzen we u door naar de
+                b  FAQ.
+                |  ALs u daar niet kan geholpen worden kunt u hier uw eigen vraag in dienen.
+                | Wij zullen uw vraag zo snel mogelijk proberen te beantwoorden!
+            form(method='POST')
+                .form-group
+                    label(for='naam')
+                    input#naam.form-control.w3-input.w3-border.w3-section(type='naam', placeholder='Voornaam + naam' name='naam' required='true' )
+                .form-group
+                    label(for='email')
+                    input#email.form-control.w3-input.w3-border.w3-section(type='email', placeholder='Email' name='email' required='true' )
+                .fomr-group
+                    label(for='vraag')
+                    input#vraag.form-control.w3-input.w3-border.w3-section(type='text', placeholder='Uw vraag' name='vraag' required='true')
+                button.w3-button.w3-black.w3-border(type='submit') Submit
+            div
+                img.w3-image.w3-padding-top-16(src='images/buiten%20nacht.jpg' alt='Foto publiek + logo NVDJ' width=auto height=auto)

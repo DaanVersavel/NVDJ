@@ -1,17 +1,22 @@
 extends layout
 
 block content
-
-  //img(src='images/LogoTRANSPARANT.png' alt='Site onder header halen' width='10' height='40')
-    //img.w3-hide-medium(src='images/LogoTRANSPARANT.png' alt='Site onder header halen' width='10' height='10')
-    //p Dit is een lijn om de afbeelding van onder de bar te halen
-    p.w3-hide-medium.w3-hide-large Nog een lijn voor het smartphone scherm
-    p.w3-hide-medium.w3-hide-large Laatste lijn.
-  header#home.w3-display-container.w3-content.w3-wide(style='max-width:1500px;')
-    img.w3-image(src='images/Foto%202.jpg' alt='Foto publiek + logo NVDJ' width='1500' height='800')
-    .w3-display-middle.w3-margin-top.w3-center
-
   header#home.w3-display-container.w3-content.w3-wide(style='max-width:100%;')
     img.w3-image(src='images/Foto%202.jpg' alt='Foto publiek + logo NVDJ' width=auto height=auto)
-
+  .bodycountdown.w3-text-white
+    h5 Countdown tot NVDJ XV
+    #countdown.countdown
+      .time
+        h6#days
+        small DAGEN
+      .time
+        h6#hours
+        small UREN
+      .time
+        h6#minutes
+        small MINUTEN
+      .time
+        h6#seconds
+        small SECONDEN
+    script(src='/javascripts/countdown.js')
 
