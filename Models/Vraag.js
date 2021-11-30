@@ -3,6 +3,7 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var VraagSchema = new Schema({
+    naam:  {type: String, required: true},
     email: {type: String, required: true},
     vraag: {type: String, required: true}
 

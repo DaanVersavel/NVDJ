@@ -11,6 +11,7 @@ const { body,validationResult } = require("express-validator");
 exports.vraag_create_post = [
 
     // Validate and sanitize fields.
+    body('naam', 'naam required').trim().isLength({ min: 1 }).escape(),
     body('email', 'email required').trim().isLength({ min: 1 }).escape(),
     body('vraag', 'vraag required').trim().isLength({ min: 1 }).escape(),
 
@@ -25,6 +26,7 @@ exports.vraag_create_post = [
         // Create Author object with escaped and trimmed data
         var vraag1 = new vraagSchema(
             {
+                naam:req.body.naam,
                 email: req.body.email,
                 vraag: req.body.vraag,
             }
