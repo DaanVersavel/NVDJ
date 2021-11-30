@@ -1,6 +1,6 @@
 //node libraries importeren
-var createError = require('http-errors');
 var express = require('express');
+var createError = require('http-errors');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
@@ -66,6 +66,5 @@ mongoose.Promise = global.Promise;
 mongoose.connect(connectionUrl,{useNewUrlParser: true}, {useUnifiedTopology: true} );
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
-
 
 module.exports = app;
