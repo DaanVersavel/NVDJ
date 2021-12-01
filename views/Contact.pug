@@ -17,18 +17,13 @@ block content
             p
                 | Indien u nog met vragen zit verwijzen we u door naar de
                 b  FAQ.
-                |  ALs u daar niet kan geholpen worden kunt u hier uw eigen vraag in dienen.
+                |  ALs u daar niet kan geholpen worden kunt u hier uw eigen vragen indienen.
                 | Wij zullen uw vraag zo snel mogelijk proberen te beantwoorden!
             form(method='POST')
-                .form-group
-                    label(for='naam')
-                    input#naam.form-control.w3-input.w3-border.w3-section(type='naam', placeholder='Voornaam + naam' name='naam' required='true' )
-                .form-group
-                    label(for='email')
-                    input#email.form-control.w3-input.w3-border.w3-section(type='email', placeholder='Email' name='email' required='true' )
-                .fomr-group
-                    label(for='vraag')
-                    input#vraag.form-control.w3-input.w3-border.w3-section(type='text', placeholder='Uw vraag' name='vraag' required='true')
-                button.w3-button.w3-black.w3-border(type='submit') Submit
+                input.w3-input.w3-border(type='text' placeholder='Naam' required='' name='Naam')
+                input.w3-input.w3-section.w3-border(type='text' placeholder='Email' required='' name='Email')
+                input.w3-input.w3-section.w3-border(type='text' placeholder='Vraag' required='' name='Vraag')
+                button.w3-button.w3-black.w3-border Submit
+                    i.fa.fa-paper-plane
             div
                 img.w3-image.w3-padding-top-16(src='images/buiten%20nacht.jpg' alt='Foto publiek + logo NVDJ' width=auto height=auto)

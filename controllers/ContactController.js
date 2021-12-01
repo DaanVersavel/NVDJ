@@ -15,8 +15,6 @@ exports.vraag_create_post = [
     body('email', 'email required').trim().isLength({ min: 1 }).escape(),
     body('vraag', 'vraag required').trim().isLength({ min: 1 }).escape(),
 
-
-
     // Process request after validation and sanitization.
     (req, res, next) => {
 
