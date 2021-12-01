@@ -15,8 +15,6 @@ exports.vraag_create_post = [
     body('email', 'email required').trim().isLength({ min: 1 }).escape(),
     body('vraag', 'vraag required').trim().isLength({ min: 1 }).escape(),
 
-
-
     // Process request after validation and sanitization.
     (req, res, next) => {
 
@@ -44,7 +42,7 @@ exports.vraag_create_post = [
             vraag1.save(function (err) {
                 if (err) { return next(err); }
                 // Successful - redirect to new author record.
-                res.redirect('Contact');
+                res.redirect('submitted');
             });
         }
     }
