@@ -13,7 +13,6 @@ var FAQRouter = require('./routes/FAQ');
 var InfoRouter = require('./routes/Info');
 var LineUpRouter = require('./routes/Line-up');
 var LocatieRouter = require('./routes/Locatie');
-var TicketsRouter = require('./routes/Tickets');
 var vrijwilligerRouter = require('./routes/Vrijwilliger');
 var cookieRouter = require('./routes/Cookies');
 
@@ -37,7 +36,6 @@ app.use('/FAQ', FAQRouter);
 app.use('/Info', InfoRouter);
 app.use('/Line-up', LineUpRouter);
 app.use('/Locatie', LocatieRouter);
-app.use('/Tickets', TicketsRouter);
 app.use('/Vrijwilliger', vrijwilligerRouter);
 app.use('/Cookies', cookieRouter);
 
