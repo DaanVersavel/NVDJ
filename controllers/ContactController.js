@@ -44,7 +44,7 @@ exports.vraag_create_post = [
             vraag1.save(function (err) {
                 if (err) { return next(err); }
                 // Successful - redirect to new author record.
-                res.redirect('Contact');
+                res.redirect('submitted');
             });
         }
     }
