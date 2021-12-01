@@ -5,12 +5,11 @@ var Schema = mongoose.Schema;
 var VrijwilligersSchema = new Schema({
     naam:  {type: String, required: true},
     email: {type: String, required: true},
-    checkboxWoensdag: {type: String, required: true},
-    checkboxDonderdag: {type: String, required: true},
-    checkboxVrijdag: {type: String, required: true},
-    checkboxZaterdag: {type: String, required: true},
-    checkboxZondag: {type: String, required: true}
-
+    checkboxWoensdag: {type: String},
+    checkboxDonderdag: {type: String},
+    checkboxVrijdag: {type: String},
+    checkboxZaterdag: {type: String},
+    checkboxZondag: {type: String}
 });
 
 // Virtual for this genre instance URL.
