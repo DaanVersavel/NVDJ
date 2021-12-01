@@ -1,6 +1,7 @@
 var vrijwilligerSchema = require('../Models/VrijwilligersModel')
 var express = require('express');
 var app = express();
+
 //app.use(bodyParser.urlencoded({ extended: true }));
 const { body,validationResult } = require("express-validator");
 // Handle Vraag create on POST.
@@ -8,12 +9,8 @@ exports.vrijwilliger_create_post = [
     // Validate and sanitize fields.
     body('naam', 'naam required').trim().isLength({ min: 1 }).escape(),
     body('email', 'email required').trim().isLength({ min: 1 }).escape(),
-    body('vraag', 'vraag required').trim().isLength({ min: 1 }).escape(),
-    body('checkboxWoensdag'),
-    body('checkboxDonderdag'),
-    body('checkboxVrijdag'),
-    body('checkboxZaterdag'),
-    body('checkboxZondag'),
+    body('wanneerBeschikbaar', 'Beschikbaarheid required').trim().isLength({ min: 1 }).escape(),
+
     // Process request after validation and sanitization.
     (req, res, next) => {
         // Extract the validation errors from a request.
@@ -24,11 +21,7 @@ exports.vrijwilliger_create_post = [
             {
                 naam:req.body.naam,
                 email: req.body.email,
-                checkboxWoensdag: req.body.checkboxWoensdag,
-                checkboxDonderdag: req.body.checkboxDonderdag,
-                checkboxVrijdag: req.body.checkboxVrijdag,
-                checkboxZaterdag: req.body.checkboxZaterdag,
-                checkboxZondag: req.body.checkboxZondag,
+                wanneerBeschikbaar: req.body.wanneerBeschikbaar,
             }
         );
         if (!errors.isEmpty()) {

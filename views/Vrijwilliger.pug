@@ -5,24 +5,17 @@ block content
          p
             | Zin om te helpen op de Nacht van de jeugd beweging? Vul dan zeker onderstaand formulier in zodat we je kunnen contacteren.
             br
-            |     We zoeken nog mensen voor aan de toog, bandjes te controleren, opbouw en afbreken van de installaties etc.
+            | We zoeken nog mensen voor aan de toog, bandjes te controleren, opbouw en afbreken van de installaties etc.
+            br
+            | Wij werken alle dagen van woensdag 19/10/2022 to zondag 23/10/2022
             //forumlier om intevullen
          .w3-center
              form(method='POST')
                  label(for='naam')
-                 input#naam.form-control.w3-input.w3-border.w3-section.w3-center(type='naam', placeholder='Voornaam + naam' name='naam' required='true' )
+                 input#naam.form-control.w3-input.w3-border.w3-section(type='naam', placeholder='Voornaam + naam' name='naam' required='true' )
                  label(for='email')
                  input#email.form-control.w3-input.w3-border.w3-section(type='email', placeholder='Email' name='email' required='true' )
-                 div(style='display: inline; padding-right:10px;')
-                     input#checkboxWoensdag.checkbox-input.form-control.w3-border.w3-section.w3-padding-16(type='checkbox', name='checkboxWoensdag' value='Woensdag')
-                     label(for='checkboxWoensdag') Woensdag
-                     input#checkboxDonderdag.form-control.w3-border.w3-section(type='checkbox', name='checkboxDonderdag' value='Donderdag')
-                     label(for='checkboxDonderdag') Donderdag
-                     input#checkboxVrijdag.form-control.w3-border.w3-section(type='checkbox', name='checkboxVrijdag' value='Vrijdag')
-                     label(for='checkboxVrijdag') Vrijdag
-                     input#checkboxZaterdag.form-control.w3-border.w3-section(type='checkbox', name='checkboxZaterdag' value='Zaterdag')
-                     label(for='checkboxZaterdag') Zaterdag
-                     input#checkboxZondag.form-control.w3-border.w3-section(type='checkbox', name='checkboxZondag' value='Zondag' )
-                     label(for='checkboxZondag') Zondag
+                 label(for='wanneerBeschikbaar')
+                 input#wanneerBeschikbaar.form-control.w3-input.w3-border.w3-section(type='text', placeholder='Beschikbaarheid' name='wanneerBeschikbaar' required='true' )
                  button.w3-button.w3-black.w3-border(type='submit') Submit
 
