@@ -422,6 +422,7 @@ nav .navbar .nav-links{
 }
 nav .navbar .links{
   display: flex;
+  font-family : "Special Elite", cursive;
 }
 nav .navbar .links li{
   position: relative;
