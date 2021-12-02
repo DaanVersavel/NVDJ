@@ -179,3 +179,8 @@ block content
     .w3-content.w3-padding(style='max-width:80%;text-align:center;')
         #djcontest.w3-container
             h2.w3-border-bottom.w3-border-light-grey.w3-padding-16 DJ contest
+    .w3-center.w3-content.w3-padding(style='max-width:80%;text-align:center;')
+        form(method='POST')
+            label(for='stem')
+            input#stem.form-control.w3-input.w3-border.w3-section(type='text', placeholder='jouw stem' name='stem' required='true' )
+            button.w3-button.w3-black.w3-border(type='submit') Submit
