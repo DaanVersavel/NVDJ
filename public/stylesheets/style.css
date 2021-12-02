@@ -174,7 +174,8 @@ button{
   .w3-hoverable tbody tr:hover,.w3-ul.w3-hoverable li:hover{background-color:#ccc}.w3-centered tr th,.w3-centered tr td{text-align:center}
   .w3-table td,.w3-table th,.w3-table-all td,.w3-table-all th{padding:8px 8px;display:table-cell;text-align:left;vertical-align:top}
   .w3-table th:first-child,.w3-table td:first-child,.w3-table-all th:first-child,.w3-table-all td:first-child{padding-left:16px}
-  .w3-btn,.w3-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+  .w3-btn,.w3-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap; font-size:25px;}
+  .w3-button-logo{border:none;display:inline-block;height:65px; padding:0px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap; font-size:25px;}
   .w3-btn:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
   .w3-btn,.w3-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
   .w3-disabled,.w3-btn:disabled,.w3-button:disabled{cursor:not-allowed;opacity:0.3}.w3-disabled *,:disabled *{pointer-events:none}
@@ -390,7 +391,7 @@ nav{
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+
   height: 65px;
   background: #fff;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
@@ -409,7 +410,7 @@ nav .navbar{
 
 /*NVDJ logo grote */
 .navbar .logo a {
-  font-size: 30px;
+  font-size: 35px;
   color: #000;
   text-decoration: none;
   font-weight: 500;
@@ -423,7 +424,10 @@ nav .navbar .nav-links{
   text-align:center;
 }
 nav .navbar .links{
+  margin: 0;
+  height: 65px;
   display: flex;
+  font-size: 25px;
   font-family : "Special Elite", cursive;
 }
 nav .navbar .links li{
@@ -562,7 +566,7 @@ nav .navbar .links li:hover .js-sub-menu{
 .navbar .bx-menu{
   display: none;
 }
-@media (max-width:920px) {
+@media (max-width:1050px) {
   nav .navbar{
     max-width: 100%;
     padding: 0 25px;
@@ -579,7 +583,24 @@ nav .navbar .links li:hover .js-sub-menu{
     font-size: 15px;
   }
 }
-@media (max-width:800px){
+.yt-video{
+  width:600px;
+  height:500px;
+}
+.eigen-maps{
+  width:100%;
+  height:650px;
+}
+@media (max-width:1000px){
+  .eigen-maps{
+    width:100%;
+    height:500px;
+  }
+  .yt-video{
+    height: 500px;
+    width: 100%;
+
+  }
   nav{
     /* position: relative; */
   }
