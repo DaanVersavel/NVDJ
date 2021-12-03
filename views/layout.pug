@@ -6,22 +6,33 @@ html
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel='stylesheet', href='/stylesheets/style.css')
-    //link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u' crossorigin='anonymous')
     link(rel='shortcut icon' type='image/png' href='/images/favicon-32x32.png')
-
-  body.center
-    .w3-top
-      .w3-bar.w3-white.w3-wide.w3-padding.w3-card
-        img.w3-image.w3-left(src='images/LogoTRANSPARANT.png' alt='logo NVDJ' width='50' height='50')
-        a(href='/').w3-bar-item.w3-button NVDJ AALST
-        .w3-right.w3-hide-small
-          a(href='./').w3-bar-item.w3-button HOME
-          a(href='./Line-up').w3-bar-item.w3-button LINE UP
-          a(href='./Locatie').w3-bar-item.w3-button LOCATIE
-          a(href='./FAQ').w3-bar-item.w3-button FAQ
-          a(href='./Vrijwilliger').w3-bar-item.w3-button VRIJWILLIGERS
+    link(href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet')
 
 
+  body
+    nav
+      .navbar
+        i.bx.bx-menu
+        img.w3-image-logo(src="/images/LogoTRANSPARANT.png" height='60px' width='60px' )
+        .logo
+          a(href='./') NVDJ AALST
+        .nav-links
+          .sidebar-logo
+            a(href='./').logo-nam.w3-button  NVDJ
+            i.bx.bx-x
+          ul.links
+            li
+              a(href='./').w3-button HOME
+            li
+              a.w3-button(href='./Line-up') LINE UP
+            li
+              a.w3-button(href='./Locatie') LOCATIE
+            li
+              a.w3-button(href='./FAQ') FAQ
+            li
+              a.w3-button(href='./Vrijwilliger') VRIJWILLIGERS
+    script(src='/javascripts/sideBar.js')
 
     .w3-padding-top-64.w3-padding-bottom-8
       block content
