@@ -482,7 +482,9 @@ nav .navbar .links li{
   }
   .w3-image-logo{max-width:100%;
     height:auto;
-  display: none;
+    display: none;
+    position: fixed;
+    left: 75px;
   }
 
   .yt-video {
