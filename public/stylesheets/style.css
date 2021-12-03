@@ -452,9 +452,11 @@ nav .navbar .links li{
     max-width: 100%;
     padding: 0 25px;
   }
-
   nav .navbar .logo a{
     font-size: 27px;
+    position: fixed;
+    right: 0px;
+    top: 10px;
     /*display: none;*/
   }
   nav .navbar .links li{
