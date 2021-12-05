@@ -4,7 +4,10 @@ const { body,validationResult } = require("express-validator");
 // Handle djContest create on POST.
 exports.DJContest_create_post = [
     // Validate and sanitize fields.
-    body('stem', 'naam required').trim().isLength({ min: 1 }).escape(),
+    body('naam', 'Naam required').trim().isLength({ min: 1 }).escape(),
+    body('email', 'Email required').trim().isLength({ min: 1 }).escape(),
+    body('artiest', 'Dj naam required').trim().isLength({ min: 1 }).escape(),
+    body('inzending', 'Link required').trim().isLength({ min: 1 }).escape(),
 
 
     // Process request after validation and sanitization.
@@ -13,9 +16,12 @@ exports.DJContest_create_post = [
         const errors = validationResult(req);
 
         // Create Author object with escaped and trimmed data
-        var stem1 = new DJContestSchema(
+        var inzending = new DJContestSchema(
             {
-                stem:req.body.stem,
+                naam:req.body.naam,
+                email: req.body.email,
+                artiest: req.body.artiest,
+                inzending:req.body.inzending,
             }
         );
         if (!errors.isEmpty()) {
@@ -26,7 +32,7 @@ exports.DJContest_create_post = [
         else {
             // Data from form is valid.
             // Save vraag.
-            stem1.save(function (err) {
+            inzending.save(function (err) {
                 if (err) { return next(err); }
                 // Successful - redirect to line-up.
                 res.redirect('submitted');

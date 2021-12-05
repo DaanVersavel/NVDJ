@@ -2,8 +2,10 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var DJContestSchema = new Schema({
-    stem:  {type: String, required: true},
-
+    naam:  {type: String, required: true},
+    email: {type: String, required: true},
+    artiest: {type: String, required: true},
+    inzending:  {type: String, required: true},
 
 });
 

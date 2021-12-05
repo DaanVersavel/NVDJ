@@ -6,7 +6,8 @@ exports.vrijwilliger_create_post = [
     // Validate and sanitize fields.
     body('naam', 'naam required').trim().isLength({ min: 1 }).escape(),
     body('email', 'email required').trim().isLength({ min: 1 }).escape(),
-    body('wanneerBeschikbaar', 'Beschikbaarheid required').trim().isLength({ min: 1 }).escape(),
+    body('tijdsslot', 'Tijdsslot required').trim().isLength({ min: 1 }).escape(),
+    body('taak', 'Taak required').trim().isLength({ min: 1 }).escape(),
 
     // Process request after validation and sanitization.
     (req, res, next) => {
@@ -18,7 +19,8 @@ exports.vrijwilliger_create_post = [
             {
                 naam:req.body.naam,
                 email: req.body.email,
-                wanneerBeschikbaar: req.body.wanneerBeschikbaar,
+                tijdsslot: req.body.tijdsslot,
+                taak: req.body.taak,
             }
         );
         if (!errors.isEmpty()) {

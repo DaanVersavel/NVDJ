@@ -178,9 +178,35 @@ block content
 
     .w3-content.w3-padding(style='max-width:80%;text-align:center;')
         #djcontest.w3-container
-            h2.w3-border-bottom.w3-border-light-grey.w3-padding-16 DJ contest
-    .w3-center.w3-content.w3-padding(style='max-width:80%;text-align:center;')
-        form(method='POST')
-            label(for='stem')
-            input#stem.form-control.w3-input.w3-border.w3-section(type='text', placeholder='Jouw stem' name='stem' required='true' )
-            button.w3-button.w3-black.w3-border(type='submit') Submit
+            h2.w3-border-bottom.w3-border-light-grey.w3-padding-16 Deelnemen aan dj contest?
+            p
+                |   Net zoals vorige jaren geven wij nieuw dj talent de kans om eens te tonen wat ze in hun mars hebben.
+                |   Als jij graag kans maakt om eens een uurtje op NVDJ te spelen voor een groot publiek kan je hier een link naar jouw mix indienen.
+                |   Uit deze inzendingen zal het management team van NVDJ de 3 beste inzendingen uitkiezen.
+                |   Deze worden dan op de NVDJ Facebook pagina bekend gemaakt.
+                |   Wie de uiteindelijke dj contest wint zal dan bepaald worden door het publiek via een openbare stemming op Facebook.
+                br
+
+            h4 VOORWAARDEN:
+            ul.a
+                li  Wij accepteren inzendingen tot de voorlaatste zondag voor het evenement (9 Oktober).
+                br
+                li  De mix moet openbaar beluisterbaar zijn (Soundcloud, Mixcloud, Youtube).
+                br
+                li  De mix duurt minimum 20 minuten en maximum een halfuur.
+                br
+                li  Je mag vrij kiezen welke genres je in de mix steekt.
+
+            form(method='POST')
+                label(for='naam')
+                input#naam.form-control.w3-input.w3-border.w3-section(type='text', placeholder='Voornaam + naam' name='naam' required='true' )
+                label(for='email')
+                input#email.form-control.w3-input.w3-border.w3-section(type='email', placeholder='Email' name='email' required='true' )
+                label(for='artiest')
+                input#artiest.form-control.w3-input.w3-border.w3-section(type='text', placeholder='Dj naam' name='artiest' required='true' )
+                label(for='inzending')
+                input#inzending.form-control.w3-input.w3-border.w3-section(type='url', placeholder='Mix (http://www.example.com)' name='inzending' required='true' size="30" minlength="10" maxlength="80" )
+                button.w3-button.w3-black.w3-border(type='submit') Submit
+
+
+
