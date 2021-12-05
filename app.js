@@ -4,6 +4,7 @@ var createError = require('http-errors');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var session=require('express-session');
 
 //Route naar pagina maken
 var indexRouter = require('./routes/index');
@@ -62,6 +63,7 @@ app.use(function(err, req, res, next) {
 //Set up mongoose connection
 var mongoose= require('mongoose')
 const bodyParser = require("body-parser");
+const {save} = require("debug");
 app.use(bodyParser.urlencoded({ extended: true }));
 var connectionUrl = "mongodb+srv://Bob:A1CNkA58GFzGVRZA@projectinternetapplicat.7xwyz.mongodb.net/FAQ?retryWrites=true&w=majority";
 var mongoDB = process.env.MONGODB_URI || connectionUrl;
@@ -72,3 +74,7 @@ var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 module.exports = app;
+
+
+
+

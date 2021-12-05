@@ -1,6 +1,7 @@
 extends layout
 
 block content
+  script(src='/javascripts/app.js')
   header#home.w3-display-container.w3-content.w3-wide(style='max-width:100%;')
     img.w3-image(src='images/Foto%202.jpg' alt='Foto publiek + logo NVDJ' width=auto height=auto)
   .bodycountdown.w3-text-white
@@ -21,11 +22,13 @@ block content
     script(src='/javascripts/countdown.js')
 
   .w3-center.socials
-    iframe.w3-padding-large(src='https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fnachtvd.aalst&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId' width='600' height='500' style='border:none;overflow:hidden' scrolling='no' frameborder='0' allowfullscreen='true' allow='autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share')
-    iframe.w3-padding-large(width='600' height='500' src='https://www.youtube.com/embed/9wFeyppjgg4' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+    iframe.w3-padding-large.yt-video(src='https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fnachtvd.aalst&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId' style='border:none;overflow:hidden' scrolling='no' frameborder='0' allowfullscreen='true' allow='autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share')
+    iframe.w3-padding-large.yt-video(src='https://www.youtube.com/embed/9wFeyppjgg4' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
 
-  .cookie-banner(style='display:none;')
-    p
-      | By using our website, you agree to our
-      a(href='./Cookies') Cookie Policy
-    button.close X
+  script(type='text/javascript').
+    var _iub = _iub || [];
+    _iub.csConfiguration = {"consentOnContinuedBrowsing":false,"whitelabel":false,"lang":"nl","floatingPreferencesButtonDisplay":"bottom-right","cookiePolicyId":54453600,"siteId":2427191,"footer":{},"cookiePolicyUrl":"./Cookies", "banner":{ "acceptButtonDisplay":true,"customizeButtonDisplay":true,"position":"float-top-center","rejectButtonDisplay":true }};
+  script(type='text/javascript' src='//cdn.iubenda.com/cs/iubenda_cs.js' charset='UTF-8' async='')
+
+
+
