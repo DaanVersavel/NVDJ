@@ -3,6 +3,7 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var VrijwilligersSchema = new Schema({
+    werkdagen:  {type: String, required: true},
     naam:  {type: String, required: true},
     email: {type: String, required: true},
     tijdsslot: {type: String, required: true},
