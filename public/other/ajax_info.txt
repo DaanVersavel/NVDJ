@@ -68,8 +68,6 @@
 <ul>
     <li>Toog 1 of 2 (tappen)</li>
     <li>Voortoog 1 of 2 (bediening)</li>
-    <li>16+ controle (ingang)</li>
-    <li>Covid safe check (ingang)</li>
     <li>Drankkassa 1 of 2</li>
     <li>Inwisselpunt bekers (uitgang)</li>
     <li>Bandjes afknippen (uitgang)</li>
@@ -84,11 +82,11 @@
 
 <p>Voormiddag (08u-13u)</p>
 <ul>
-    <li>Opkuis (Tent leeghalen (planchet weghalen) + terrein opkuisen + omgeving opruimen)</li>
+    <li>Opkuis (tent leeghalen (planchet weghalen) + terrein opkuisen + omgeving opruimen)</li>
 </ul>
 <p>Namiddag (14u-18u)</p>
 <ul>
-    <li>Opkuis (Tent leeghalen (planchet weghalen) + terrein opkuisen + omgeving opruimen)</li>
+    <li>Opkuis (tent leeghalen (planchet weghalen) + terrein opkuisen + omgeving opruimen)</li>
 </ul>
 
 
@@ -97,9 +95,9 @@
 
 <p>Voormiddag (08u-13u)</p>
 <ul>
-    <li>Opkuis (Tent neerhalen + opvouwen)</li>
+    <li>Opkuis (tent neerhalen + opvouwen)</li>
 </ul>
 <p>Namiddag (14u-18u)</p>
 <ul>
-    <li>Opkuis (Terrein leegmaken + afval opkuisen)</li>
+    <li>Opkuis (terrein leegmaken + afval opkuisen)</li>
 </ul>
