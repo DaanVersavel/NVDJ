@@ -1,0 +1,105 @@
+<h4><u>Woensdag:</u></h4>
+
+<p>Voormiddag (08u-13u)</p>
+<ul>
+    <li>Opbouw (tent + terrein)</li>
+</ul>
+<p>Namiddag (14u-18u)</p>
+<ul>
+    <li>Opbouw (tent (planchet leggen) + terrein)</li>
+</ul>
+
+
+
+<h4><u>Donderdag:</u></h4>
+
+<p>Voormiddag (08u-13u)</p>
+<ul>
+    <li>Opbouw (terrein + tent binnen)</li>
+</ul>
+<p>Namiddag (14u-18u)</p>
+<ul>
+    <li>Opbouw (terrein + tent binnen)</li>
+</ul>
+
+
+
+<h4><u>Vrijdag:</u></h4>
+
+<p>Voormiddag (08u-13u)</p>
+<ul>
+    <li>Inrichten tent + terrein</li>
+</ul>
+<p>Namiddag (14u-18u)</p>
+<ul>
+    <li>Afwerken tent + terrein</li>
+</ul>
+<p>Avond (20u-22u)</p>
+<ul>
+    <li>Toog 1 of 2 (tappen)</li>
+    <li>Voortoog 1 of 2 (bediening)</li>
+    <li>16+ controle (ingang)</li>
+    <li>Covid safe check (ingang)</li>
+    <li>Drankkassa 1 of 2</li>
+    <li>Inwisselpunt bekers (uitgang)</li>
+    <li>Bandjes afknippen (uitgang)</li>
+</ul>
+<p>Avond (22u-00u)</p>
+<ul>
+    <li>Toog 1 of 2 (tappen)</li>
+    <li>Voortoog 1 of 2 (bediening)</li>
+    <li>16+ controle (ingang)</li>
+    <li>Covid safe check (ingang)</li>
+    <li>Drankkassa 1 of 2</li>
+    <li>Inwisselpunt bekers (uitgang)</li>
+    <li>Bandjes afknippen (uitgang)</li>
+</ul>
+<p>Avond (00u-02u)</p>
+<ul>
+    <li>Toog 1 of 2 (tappen)</li>
+    <li>Voortoog 1 of 2 (bediening)</li>
+    <li>16+ controle (ingang)</li>
+    <li>Covid safe check (ingang)</li>
+    <li>Drankkassa 1 of 2</li>
+    <li>Inwisselpunt bekers (uitgang)</li>
+    <li>Bandjes afknippen (uitgang)</li>
+</ul>
+<p>Avond (02u-04u)</p>
+<ul>
+    <li>Toog 1 of 2 (tappen)</li>
+    <li>Voortoog 1 of 2 (bediening)</li>
+    <li>16+ controle (ingang)</li>
+    <li>Covid safe check (ingang)</li>
+    <li>Drankkassa 1 of 2</li>
+    <li>Inwisselpunt bekers (uitgang)</li>
+    <li>Bandjes afknippen (uitgang)</li>
+</ul>
+<p>Avond (20u-04u)</p>
+<ul>
+    <li>Security</li>
+</ul>
+
+
+<h4><u>Zaterdag:</u></h4>
+
+<p>Voormiddag (08u-13u)</p>
+<ul>
+    <li>Opkuis (Tent leeghalen (planchet weghalen) + terrein opkuisen + omgeving opruimen)</li>
+</ul>
+<p>Namiddag (14u-18u)</p>
+<ul>
+    <li>Opkuis (Tent leeghalen (planchet weghalen) + terrein opkuisen + omgeving opruimen)</li>
+</ul>
+
+
+
+<h4><u>Zondag:</u></h4>
+
+<p>Voormiddag (08u-13u)</p>
+<ul>
+    <li>Opkuis (Tent neerhalen + opvouwen)</li>
+</ul>
+<p>Namiddag (14u-18u)</p>
+<ul>
+    <li>Opkuis (Terrein leegmaken + afval opkuisen)</li>
+</ul>

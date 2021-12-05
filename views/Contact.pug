@@ -5,14 +5,13 @@ block content
         #Contact.w3-container
             h2.w3-border-bottom.w3-border-light-grey.w3-padding-16 Contact
             p Nacht Van De Jeugdbeweging Aalst wordt gerorganiseerd door Chiro Maeva.
-            div
-                ul
-                    li
-                        b Postadres
-                        p Meuleschettestraat 32, 9300 Aalst België
-                    li
-                        b Emailadres
-                        p chiromaeva@gmail.com
+            ul
+                li
+                    b Postadres
+                    p Meuleschettestraat 32, 9300 Aalst België
+                li
+                    b Emailadres
+                    p chiromaeva@gmail.com
             h2.w3-border-bottom.w3-border-light-grey.w3-padding-16 Nog vragen?
             p
                 | Indien u nog met vragen zit verwijzen we u door naar de
@@ -21,10 +20,8 @@ block content
                 |  pagina! ALs u daar niet kan geholpen worden kunt u hier uw eigen vragen indienen.
                 | Wij zullen uw vraag zo snel mogelijk proberen te beantwoorden!
             form(method='POST')
-                input.w3-input.w3-border(type='text' placeholder='Naam' required='' name='naam')
-                input.w3-input.w3-section.w3-border(type='text' placeholder='Email' required='' name='email')
-                input.w3-input.w3-section.w3-border(type='text' placeholder='Vraag' required='' name='vraag')
+                input.w3-input.w3-border(type='text' placeholder='Naam' required='true' name='naam')
+                input.w3-input.w3-section.w3-border(type='text' placeholder='Email' required='true' name='email')
+                input.w3-input.w3-section.w3-border(type='text' placeholder='Vraag' required='true' name='vraag')
                 button.w3-button.w3-black.w3-border Submit
-                    i.fa.fa-paper-plane
-            div
-                img.w3-image.w3-padding-top-16(src='images/buiten%20nacht.jpg' alt='Foto publiek + logo NVDJ' width=auto height=auto)
+            img.w3-image.w3-padding-top-16(src='images/buiten%20nacht.jpg' alt='Foto publiek + logo NVDJ' width=auto height=auto)

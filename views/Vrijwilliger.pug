@@ -1,21 +1,42 @@
 extends layout
 
 block content
+    .w3-content.w3-padding(style='max-width:80%;text-align:justify;')
+        #Vrijwilligers.w3-container
+            h2.w3-border-bottom.w3-border-light-grey.w3-padding-16 Helpen op Nacht Van De Jeugdbeweging
+            p
+                |   Zoals iedere editie neemt het opzetten, organiseren en afbouwen van NVDJ heel wat werkuren in beslag.
+                |   We zijn daarom heel dankbaar aan alle vrijwilligers die voor, tijdens en na NVDJ een handje komen bijsteken om dit prachtige evenement te realiseren.
+                |   Indien u ook geïnteresseerd bent om de jongens van de Chiro te helpen tijdens dit hele gebeuren, dan kan u onderstaand formulier invullen.
+                |   Eenmaal u dit gedaan heeft zult u van ons een mailtje terugkrijgen met verdere uitleg over het verloop.
+                |   Uiteraard zullen de vrijwilligers een mooie bedanking krijgen van de organistatie na afloop van het evenement.
+                |   Hiervoor wordt nog een speciale bedankingsavond georganiseerd, hiervoor zult u dan persoonlijk gecontacteerd worden.
+                |   Indien u met een groep of organisatie (jeugdbeweging/carnavalgroep/...) vragen we u om dit te vermelden naast uw naam in het eerste invulvakje.
+
+            #taken
+                p   Via onderstaande knop krijgt u een overzicht van de beschikbare taken en de tijdssloten voor deze taken.
+                button(type="button" onclick="loadDoc()") Taken + tijdssloten
+
     .w3-content.w3-padding(style='max-width:80%;text-align:center;')
-         p
-            | Zin om te helpen op de Nacht van de jeugd beweging? Vul dan zeker onderstaand formulier in zodat we je kunnen contacteren.
-            br
-            | We zoeken nog mensen voor aan de toog, bandjes te controleren, opbouw en afbreken van de installaties etc.
-            br
-            | Wij werken alle dagen van woensdag 19/10/2022 to zondag 23/10/2022
-            //forumlier om intevullen
-         .w3-center
-             form(method='POST')
-                 label(for='naam')
-                 input#naam.form-control.w3-input.w3-border.w3-section(type='naam', placeholder='Voornaam + naam' name='naam' required='true' )
-                 label(for='email')
-                 input#email.form-control.w3-input.w3-border.w3-section(type='email', placeholder='Email' name='email' required='true' )
-                 label(for='wanneerBeschikbaar')
-                 input#wanneerBeschikbaar.form-control.w3-input.w3-border.w3-section(type='text', placeholder='Beschikbaarheid' name='wanneerBeschikbaar' required='true' )
-                 button.w3-button.w3-black.w3-border(type='submit') Submit
+        //forumlier om intevullen
+        form(method='POST')
+            select.w3-padding(name='werkdagen' onchange='showWerkdagen(this.value)' required='true')
+                option(value='') Werkdagen:
+                option(value='woensdag') Woensdag 19/10
+                option(value='donderdag ') Donderdag 20/10
+                option(value='vrijdag') Vrijdag 21/10
+                option(value='zaterdag') Zaterdag 22/10
+                option(value='zondag') Zondag 23/10
+            label(for='naam')
+            input#naam.form-control.w3-input.w3-border.w3-section(type='text', placeholder='Naam + voornaam' name='naam' required='true' )
+            label(for='email')
+            input#email.form-control.w3-input.w3-border.w3-section(type='email', placeholder='Email' name='email' required='true' )
+            label(for='tijdsslot')
+            input#tijdsslot.form-control.w3-input.w3-border.w3-section(type='text', placeholder='Tijdsslot' name='tijdsslot' required='true' )
+            label(for='taak')
+            input#taak.form-control.w3-input.w3-border.w3-section(type='text', placeholder='Taak' name='taak' required='true' )
+            button.w3-button.w3-black.w3-border(type='submit' onclick="myFunction()") Submit
+        img.w3-image.w3-padding-top-16(src='images/tentWideBlauw.jpg' alt='Foto publiek met lichtjes' width=auto height=auto)
+    script(src='/javascripts/AJAX.js')
+
 
